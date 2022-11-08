@@ -35,6 +35,24 @@ figure {
   padding: 0;
 }
 
+.header-links-contact {
+  color: var(--text-normal-color);
+  transition: 0.2s;
+  fill: var(--text-normal-color);
+  stroke-width: 0%;
+}
+
+.header-links-contact:hover {
+  fill: var(--text-hover-color);
+  color: var(--text-hover-color);
+  stroke-width: 0%;
+}
+
+.header-links-contact:focus {
+  fill: var(--text-hover-color);
+  color: var(--text-hover-color);
+}
+
 .header-links {
   color: var(--text-headers-color);
   transition: 0.2s;
@@ -86,6 +104,7 @@ figure {
   margin: 0;
   flex-flow: row wrap;
   gap: 10px;
+  align-items: center;
 }
 
 .contact-flex {
@@ -98,10 +117,6 @@ figure {
 
 .email-flex:hover {
   fill: var(--text-hover-color);
-}
-
-.tel-number {
-  color: var(--text-normal-color);
 }
 
 .webstudio-black {
@@ -119,7 +134,6 @@ figure {
   line-height: 1.19;
   color: var(--logo-white);
   display: block;
-  padding-left: 200px;
 }
 
 .webstudio-blue {
@@ -208,8 +222,15 @@ figure {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--logo-white);
+}
+
+.footer-wrapper {
+  display: flex;
+  gap: 70px;
+  margin: 0;
+  justify-content: flex-start;
+  align-items: center;
   padding-top: 60px;
-  padding-left: 15px;
   padding-bottom: 60px;
 }
 
@@ -259,6 +280,25 @@ figure {
   background-color: var(--text-hover-color);
   color: var(--button-color-filter);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border-color: var(--text-hover-color);
+}
+
+.button-filter-menu:focus {
+  background-color: var(--text-hover-color);
+  color: var(--button-color-filter);
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border-color: var(--text-hover-color);
+}
+
+ul.aplications-list > li > figure:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .team-names {
@@ -376,7 +416,6 @@ figure {
   flex-direction: column;
   gap: 9px;
   margin: 0;
-  margin-left: 200px;
 }
 
 .menu-filter {
@@ -457,4 +496,136 @@ ul.aplications-list > li > figure > img {
   align-items: center;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.team-social-icon-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  margin: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.team-social-icons {
+  width: 20px;
+  height: 20px;
+}
+
+.team-social-circle-shape {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.team-social-circle-shape:hover {
+  background-color: #2196f3;
+  fill: var(--backgound-color);
+}
+
+.team-social-circle-shape:focus {
+  background-color: #2196f3;
+  fill: var(--backgound-color);
+}
+
+.our-clients-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.Our-clients-box {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+.Our-clients-box:hover {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
+
+.Our-clients-box:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
+
+.our-cients-insidebox {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  width: 106px;
+  height: 60px;
+}
+
+.our-clients-box-items {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-social-icon-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social-icons {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social-circle-shape {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-image: linear-gradient(#ffffff1a, #ffffff1a 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  fill: var(--backgound-color);
+}
+
+.footer-social-circle-shape:hover {
+  background-color: #2196f3;
+}
+
+.footer-social-circle-shape:focus {
+  background-color: #2196f3;
+}
+
+.footer-join-us-text {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  line-height: 100%;
+  padding-bottom: 20px;
+}
+
+.padding-top-2 {
+  padding-top: 2px;
+}
+
+.padding-menu-filter {
+  padding: 6px 22px;
+  display: block;
 }
