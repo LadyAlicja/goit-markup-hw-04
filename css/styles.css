@@ -75,6 +75,7 @@ figure {
   letter-spacing: 0.02em;
   background-color: var(--header-color);
   border-bottom: 1px solid #ececec;
+  max-width: 1600px;
 
   padding-top: 24px;
   padding-bottom: 24px;
@@ -144,10 +145,8 @@ figure {
 }
 
 .button-order {
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
+  min-width: 200px;
+  padding: 10px 32px;
 
   background: var(--text-hover-color);
 
@@ -168,16 +167,16 @@ figure {
 }
 
 .header-block {
-  padding-left: 200px;
-  padding-right: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  flex-direction: column;
+  padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url("../images/main-background.jpg"),
-    linear-gradient(#2f303a66, #2f303a66 40%);
+  background-image: linear-gradient(#2f303a66, #2f303a66 40%),
+    url("../images/main-background.jpg");
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
 .header-block-text {
@@ -188,11 +187,9 @@ figure {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-board-text);
-  display: flex;
-  padding-top: 200px;
   padding-bottom: 30px;
   width: 696px;
-  margin: 0px;
+  margin: 0 auto;
 }
 
 .description-blocks {
@@ -336,6 +333,8 @@ ul.aplications-list > li > figure:hover {
 
 .container {
   width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
