@@ -14,10 +14,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  width: 1600px;
+
   background: var(--backgound-color);
   color: var(--text-normal-color);
-  margin: auto;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 a {
@@ -26,6 +27,8 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 figure {
   margin: 0;
@@ -66,19 +69,21 @@ figure {
 }
 
 .page-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   background-color: var(--header-color);
+  border-bottom: 1px solid #ececec;
 
   padding-top: 24px;
   padding-bottom: 24px;
 
   color: var(--text-headers-color);
+}
+
+.header-main-flex {
+  display: flex;
 }
 
 .nav-flexlist {
@@ -92,10 +97,8 @@ figure {
 
 .nav-items {
   display: flex;
-  gap: 46px;
+  gap: 50px;
   align-items: center;
-  justify-content: space-between;
-  margin: 0;
 }
 
 .contact-flex-item {
@@ -111,8 +114,8 @@ figure {
   display: flex;
   gap: 30px;
   align-items: center;
-  justify-content: end;
-  margin: 0;
+
+  margin-left: auto;
 }
 
 .email-flex:hover {
@@ -252,10 +255,6 @@ figure {
 
 .footer-text-color:focus {
   color: var(--text-hover-color);
-}
-
-.line {
-  border: 1px solid #ececec;
 }
 
 .button-filter-menu {
@@ -470,15 +469,13 @@ ul.aplications-list > li > figure > img {
 .phone-icon {
   width: 10px;
   height: 16px;
-
-  stroke: #757575;
+  margin-right: 10px;
 }
 
 .envelope-icon {
   width: 16px;
   height: 12px;
-
-  stroke: #757575;
+  margin-right: 10px;
 }
 
 .strenghts-icons {
