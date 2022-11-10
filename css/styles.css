@@ -76,6 +76,7 @@ figure {
   background-color: var(--header-color);
   border-bottom: 1px solid #ececec;
   max-width: 1600px;
+  margin: 0 auto;
 
   padding-top: 24px;
   padding-bottom: 24px;
@@ -222,6 +223,9 @@ figure {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--logo-white);
+
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 .footer-wrapper {
@@ -351,13 +355,6 @@ ul.aplications-list > li > figure:hover {
   padding-left: 0;
 }
 
-.section-main-page {
-  margin-left: 200px;
-  margin-right: 200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .about-us-block {
   padding: 0 15px;
 }
@@ -390,6 +387,8 @@ ul.aplications-list > li > figure:hover {
   background-color: var(--button-color);
   padding-left: 215px;
   padding-right: 215px;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 .our-team-list {
