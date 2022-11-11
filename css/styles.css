@@ -288,7 +288,7 @@ h3 {
   background: var(--button-color);
   border-radius: 4px;
   border-color: var(--button-color);
-
+  border: none;
   padding: 6px 22px;
 }
 
@@ -336,18 +336,19 @@ ul.aplications-list > li > div:hover {
 
 .porfolio-names {
   color: var(--text-headers-color);
-
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  display: block;
 }
 
 .portfolio-desciption {
   color: var(--text-normal-color);
-
+  display: block;
   font-size: 16px;
-  line-height: 1.87px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
 }
 
