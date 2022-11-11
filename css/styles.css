@@ -34,15 +34,24 @@ figure {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
 .padding-none {
   padding: 0;
 }
 
 .header-links-contact {
   color: var(--text-normal-color);
-  transition: 0.2s;
+  display: flex;
   fill: var(--text-normal-color);
-  stroke-width: 0%;
+  align-items: center;
 }
 
 .header-links-contact:hover {
@@ -59,8 +68,14 @@ figure {
 .header-links {
   color: var(--text-headers-color);
   transition: 0.2s;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
+.header-nav-text-style {
+}
 .header-links:hover {
   color: var(--text-hover-color);
 }
@@ -69,10 +84,6 @@ figure {
 }
 
 .page-header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   background-color: var(--header-color);
   border-bottom: 1px solid #ececec;
   max-width: 1600px;
@@ -200,7 +211,7 @@ figure {
 
 .description-blocks-text {
   color: var(--text-normal-color);
-
+  padding-top: 10px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -209,7 +220,7 @@ figure {
 .description-blocks-header {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-headers-color);
@@ -218,24 +229,30 @@ figure {
 .footer {
   background-color: var(--background-block-color);
 
+  margin: 0 auto;
+  max-width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-wrapper {
+  display: flex;
+
+  margin: 0;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.footer-tekst-style {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--logo-white);
-
-  margin: 0 auto;
-  max-width: 1600px;
 }
 
-.footer-wrapper {
-  display: flex;
-  gap: 70px;
-  margin: 0;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+.social-links-footer-margin {
+  margin-left: 70px;
 }
 
 .address {
@@ -258,20 +275,19 @@ figure {
   color: var(--text-hover-color);
 }
 
-.button-filter-menu {
-  background: var(--button-color);
-  border-radius: 4px;
-  border-color: var(--button-color);
-
+.button-filter-menu-tekst {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-headers-color);
-  border-style: solid;
-  height: 38px;
-  transition: 0.2s;
+}
+
+.button-filter-menu {
+  background: var(--button-color);
+  border-radius: 4px;
+  border-color: var(--button-color);
 
   padding: 6px 22px;
 }
@@ -296,14 +312,14 @@ figure {
   border-color: var(--text-hover-color);
 }
 
-ul.aplications-list > li > figure:hover {
+ul.aplications-list > li > div:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .team-names {
   color: var(--text-headers-color);
-
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -312,7 +328,7 @@ ul.aplications-list > li > figure:hover {
 
 .team-jobs {
   color: var(--text-normal-color);
-
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -367,6 +383,10 @@ ul.aplications-list > li > figure:hover {
   gap: 30px;
 }
 
+.mb-section {
+  margin-bottom: 91px;
+}
+
 .what-we-do-text {
   color: var(--text-headers-color);
   font-weight: 700;
@@ -374,21 +394,29 @@ ul.aplications-list > li > figure:hover {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   display: block;
-  margin: 0;
+}
+
+.our-clients-text {
+  color: var(--text-headers-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  display: block;
 }
 
 .picture-display {
   display: block;
 }
 
-.our-team {
+.our-team-background {
   background-color: var(--button-color);
-  padding-left: 215px;
-  padding-right: 215px;
-  margin: 0 auto;
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .our-team-list {
@@ -399,12 +427,16 @@ ul.aplications-list > li > figure:hover {
   gap: 30px;
 }
 
+.card-padding {
+  padding: 30px 0;
+}
+
 .team-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  padding-bottom: 30px;
+
   background-color: var(--backgound-color);
 }
 
@@ -415,14 +447,18 @@ ul.aplications-list > li > figure:hover {
   margin: 0;
 }
 
+.menu-filer-block {
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+
 .menu-filter {
   display: flex;
   gap: 8px;
   padding-left: 0;
   justify-content: center;
-  padding-top: 94px;
+
   margin: 0;
-  padding-bottom: 50px;
 }
 
 .aplications-list {
@@ -454,12 +490,16 @@ ul.aplications-list > li > figure:hover {
   margin: 0;
 }
 
-ul.aplications-list > li > figure > img {
+ul.aplications-list > li > div > img {
   display: block;
 }
 
 .no-padding {
   padding-bottom: 0;
+}
+
+.no-padding-top {
+  padding-top: 0;
 }
 
 /* ICONS */
@@ -474,6 +514,7 @@ ul.aplications-list > li > figure > img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .strenghts-icons {
@@ -495,12 +536,11 @@ ul.aplications-list > li > figure > img {
 
 .team-social-icon-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
 
   margin: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 0;
 }
 
 .team-social-icons {
@@ -541,21 +581,19 @@ ul.aplications-list > li > figure > img {
   width: 170px;
   height: 92px;
   border-radius: 4px;
-  border: 1px solid #afb1b8;
-  fill: #afb1b8;
+  border: 1px solid currentColor;
+  color: #afb1b8;
   display: flex;
-  margin: 0;
+
   justify-content: center;
   align-items: center;
 }
 .Our-clients-box:hover {
-  fill: #2196f3;
-  border: 1px solid #2196f3;
+  color: #2196f3;
 }
 
 .Our-clients-box:focus {
-  fill: #2196f3;
-  border: 1px solid #2196f3;
+  color: #2196f3;
 }
 
 .our-cients-insidebox {
@@ -568,10 +606,9 @@ ul.aplications-list > li > figure > img {
 }
 
 .our-clients-box-items {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 .footer-social-icon-list {
@@ -613,7 +650,8 @@ ul.aplications-list > li > figure > img {
   font-size: 14px;
   margin: 0;
   line-height: 100%;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: var(--backgound-color);
 }
 
 .padding-top-2 {
